@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Places to Visit</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+  <!-- Banner Section -->
+  <div class="banner">
+    <div class="container">
+      <h1>Explore Top Destinations</h1>
+      <h2>Your dream destination awaits</h2>
+      <a href="#travel-form" class="button">Discover your next adventure</a>
+    </div>
+  </div>
+
+  <!-- Slideshow Section -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/Italy.webp" alt="Italy">
+        <h3>Italy</h3>
+        <p>Explore the beauty and culture of Italy.</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Portugal.jpg" alt="Portugal">
+        <h3>Portugal</h3>
+        <p>Relax on the stunning beaches of Portugal.</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="images/Morocco.jpg" alt="Morocco">
+        <h3>Morocco</h3>
+        <p>Experience the unique culture and landscapes of Morocco.</p>
+      </div>
+    </div>
+    <!-- Add Pagination with Bubbles -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Interactive Cards Section -->
+  <div class="container">
+    <h2 class="section-title">Choose Your Perfect Destination</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/Italy.webp" alt="Italy">
+        <h3>Italy</h3>
+        <p>Known for its iconic landmarks and rich culture, Italy awaits you!</p>
+        <a href="#" class="card-button">Explore Italy</a>
+      </div>
+      <div class="card">
+        <img src="images/Portugal.jpg" alt="Portugal">
+        <h3>Portugal</h3>
+        <p>Golden beaches and breathtaking views make Portugal a must-visit!</p>
+        <a href="#" class="card-button">Explore Portugal</a>
+      </div>
+      <div class="card">
+        <img src="images/Morocco.jpg" alt="Morocco">
+        <h3>Morocco</h3>
+        <p>From the desert dunes to vibrant cities, Morocco is full of surprises.</p>
+        <a href="#" class="card-button">Explore Morocco</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Travel Form -->
+  <div id="travel-form">
+    <div data-tf-live="01JGEYEYP9666B07QZD7FEY4VV"></div>
+    <script src="https://embed.typeform.com/next/embed.js"></script>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  
+</body>
+</html>
